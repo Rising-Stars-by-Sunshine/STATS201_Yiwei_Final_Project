@@ -5,7 +5,31 @@ This repository is the final project for STATS201.The project applies the Alpaca
 - Instructor: Prof. Luyao Zhang, Duke Kunshan University
 - Acknowledgments: I extend my deepest gratitude to Prof. Luyao Zhang for their unwavering guidance, expertise, and encouragement, which helped me finish this project.
 - Disclaimer: Submissions to the Final Project for [STATS201 Introduction to Machine Learning for Social Science, 2023 Autumn Term (Seven Week - Second)](https://ms.pubpub.org/) instructed by Prof. Luyao Zhang at Duke Kunshan University.
-- Project summary: This project deploys Alpaca-LoRA to fine-tune the LlaMA2 model for analyzing social media sentiments. It labeled tweets, preprocesses it, and integrates sentiment analysis. Alpaca-LoRA optimizes the LlaMA2 model, enhancing its relevance in the sentiment analysis. LlaMA2 undergoes fine-tuning, incorporating insights from the adapted model for precise sentiment analysis. This approach refines large language models, enabling a new approach to the analysis of sentiment of social media tweets from news data, and aiding informed social studies.
+- Project summary: This project deploys Alpaca-LoRA to fine-tune the LlaMA2 model for analyzing social media sentiments. It labels tweets, preprocesses it, and integrates sentiment analysis. Alpaca-LoRA optimizes the LlaMA2 model, enhancing its relevance in sentiment analysis. LlaMA2 undergoes fine-tuning, incorporating insights from the adapted model for precise sentiment analysis. This approach refines large language models, enabling a new approach to the analysis of sentiment of social media tweets from news data, and aiding informed social studies.
+## Poster and Project Summary
+### Background
+- This project explores the utilization of the Alpaca-LoRA method to fine-tune large language models for the purpose of analyzing sentiments within social media content. The focus is on adapting the LlaMA2 model, a collection of pre-trained and fine-tuned generative text models, to enhance its capabilities in interpreting sentiment tendencies prevalent in discussions across various platforms.
+### Research question
+Can sentiment in social media replies be accurately predicted using large language models fine-tuned by LoRA (Low-Rank Adaptation of Large Language Models) and relevant datasets?
+### Application Scenario
+- This project integrating Alpaca-LoRA to fine-tune the LlaMA2 model revolutionizes how journalists decipher social media sentiment. As breaking news erupts, the system swiftly gathers tweets, meticulously labeling and preprocessing them for analysis. Alpaca-LoRA steps in, optimizing the LlaMA2 model to grasp the nuances of social media discourse, amplifying its relevance in sentiment analysis. The model undergoes a meticulous fine-tuning process, absorbing key insights from the adapted framework, honing its precision in gauging sentiments expressed across tweets. This cutting-edge methodology not only refines large language models but reshapes the approach to dissecting social media sentiments related to news events. Journalists now access a tool that swiftly decodes public reactions, aiding in crafting more resonant stories. Moreover, researchers find a goldmine for social studies, unraveling the intricate tapestry of societal responses to news through these refined sentiment analyses.
+### Methodology
+- Data Collection: Gather diverse labeled social media tweets.
+- Preprocessing: Extract relevant text, remove noise, correct errors, and convert data to the required format.
+- Alpaca-LoRA Integration: Integrate Alpaca-LoRA for optimal large language model integration, fine-tuning it for enhanced relevance in gold price analysis.
+- LlaMA2 Fine-Tuning: Enhance LlaMA2 for gold price prediction using insights from the adapted large language model. Train the model to predict gold price movements based on news content analysis.
+- Model Training and Evaluation: Train the adapted LlaMA2 model with preprocessed data and insights. Evaluate its performance using metrics like accuracy, and precision.
+### Results
+- Insights Generation: Interpret and present quantitative and qualitative insights derived from the model's predictions, showcasing the effectiveness of utilizing large language models for analyzing social media tweets sentiments.
+- ![](Result\1.png)
+- ![](Result\2.png)
+- ![](Result\3.png)
+- ![](Result\4.png)
+### Intellectual Merits and Practical impacts
+- The intellectual merits of this project lie in its pioneering approach to refining sentiment analysis through the integration of Alpaca-LoRA and the LlaMA2 model. By deploying cutting-edge technology to fine-tune established language models, it advances the understanding of social media sentiments in the context of news data. The project not only enhances the relevance and accuracy of sentiment analysis but also contributes to the evolution of large language models, paving the way for more nuanced and contextually aware AI systems.
+- Practically, this endeavor offers substantial impacts across various domains. In media and journalism, it facilitates real-time insights into public sentiment, enabling faster and more precise news reporting. Businesses benefit from more informed decision-making through the understanding of consumer opinions and trends. Furthermore, in academia, this refined approach aids researchers in comprehensively studying societal responses to events, enriching social studies and fostering a deeper understanding of human behavior in the digital age.
+### Poster
+- ![](STATS201.png)
 ## Literature
 - Connecting it to prior research, the paper by Neethu, M. S., and R. Rajasree (2013) focuses on sentiment analysis in Twitter using machine learning techniques. It likely provides foundational insights into the challenges and methods for sentiment analysis in the context of Twitter data. Meanwhile, Agarwal and Mittal's work in 2016 on machine learning approaches for sentiment analysis, especially the prominent feature extraction for sentiment analysis, could offer techniques and methodologies related to feature extraction, a crucial aspect in sentiment analysis models.
 - This advances this prior research in several ways:
@@ -14,10 +38,12 @@ This repository is the final project for STATS201.The project applies the Alpaca
 3. New Methodology: By refining large language models through this optimization process, the research introduces a new methodology or approach to sentiment analysis on social media data, especially tweets from news sources. This could pave the way for a more robust and efficient sentiment analysis framework applicable to various social studies.
 4. Addressing Contemporary Needs: Given that the cited papers were published earlier, this current research addresses contemporary needs by likely considering newer challenges in sentiment analysis, such as evolving language usage, diverse sentiments, and the dynamic nature of social media conversations.
 - In general, this project builds upon prior research by implementing advanced techniques (Alpaca-LoRA) to enhance an existing model (LlaMA2) for sentiment analysis. It not only contributes to improving accuracy but also introduces a refined methodology that could potentially influence future research in social media sentiment analysis and its applications in social studies.
+### Flowchart
+- ![](Literature\1.png)
 ## Method
 ### 1.1. The Prediction Problem
 #### Research Question Formulation:
-- Objective: Can sentiment in social media replies be accurately predicted using LoRA (Low-Rank Adaptation of Large Language Models) and relevant datasets?
+- Objective: Can sentiment in social media replies be accurately predicted using large language models fine-tuned by LoRA (Low-Rank Adaptation of Large Language Models) and relevant datasets?
 - Significance: Understanding sentiment in social media replies holds crucial importance for various applications such as gauging public opinion, brand perception, and trend analysis. Accurate sentiment analysis aids in informed decision-making for businesses, governments, and organizations by comprehending public sentiment towards specific topics or events.
 #### Operational Measures:
 ##### Variables:
@@ -111,7 +137,29 @@ Feature Engineering: Exploring additional features or refining existing ones to 
 ### Flowchart
 - ![](Code\1.png)
 ## Results:
+- This research aims to answer the question of accurately predicting sentiment in social media replies using large language mohdels fine-tuned by LoRA and relevant datasets through a comprehensive methodology:
+- Dataset Selection and Preprocessing: We meticulously select and preprocess diverse social media datasets containing reply interactions. These datasets encompass a wide array of topics, ensuring a comprehensive representation of social media discourse.
+- LoRA Integration and Fine-Tuning: Leveraging LoRA, we fine-tune large language models such as LlaMA2 with the selected datasets. LoRA's low-rank adaptation techniques enable the models to grasp the nuanced sentiment expressions within social media replies.
+- Model Evaluation and Validation: Employing rigorous evaluation metrics, we validate the fine-tuned models' performance in predicting sentiment accurately within social media replies. Cross-validation and benchmarking against established sentiment analysis methods ensure robustness and reliability. 
+- Result Analysis and Interpretation: Analyzing the outcomes, we detail the effectiveness of LoRA-fine-tuned models in predicting sentiment. We delve into specific cases, showcasing instances where the models excel and elucidating areas for potential improvement.
+- Discussion and Conclusion: The research culminates in a discussion emphasizing how the amalgamation of LoRA adaptation techniques with large language models significantly enhances sentiment prediction in social media replies. We highlight the practical implications, limitations, and avenues for future research in refining sentiment analysis methodologies.
+- ![](Result\5.png)
+## Spotlights
+-![](Spotlights\method.png)
+-![](Spotlights\literature.png)
+-![](Spotlights\data.png)
+-![](Spotlights\code.png)
+-![](Spotlights\result.png)
+## More about author
+- ![](Yiwei_photo.jpg)
+### Self-introduction
+- - Yiwei Liang has extensive experience in computer technology and office software. He is not only familiar with front-end development technologies, such as HTML, CSS, JavaScript, etc., but is also proficient in using programming languages such as Python and Java.
+### Final Reflections
+- Intellectual Growth: Understand machine learning's societal impact by studying case studies. Analyze ethical considerations. Explore interdisciplinary perspectives to grasp its role in addressing social and economic issues.
 
+- Professional Growth: Acquire technical proficiency in ML and soft skills. Network within diverse communities. Create a balanced professional profile, blending technical expertise with societal understanding.
+
+- Purposeful Life: Aim to pioneer ethical AI for societal good. Envision contributions recognized with a Nobel or Turing Award. Aspire to reshape society positively, prioritizing ethical considerations and advancing human well-being.
 ## References
 ### Data Source
 - Sentiment Analysis Dataset: https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset?rvi=1
@@ -122,6 +170,14 @@ Feature Engineering: Exploring additional features or refining existing ones to 
 - Agarwal, Basant, Namita Mittal, Basant Agarwal, and Namita Mittal. "Machine learning approach for sentiment analysis." Prominent feature extraction for sentiment analysis (2016): 21-45.
 - Hu, Edward J., Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. “LoRA: Low-Rank Adaptation of Large Language Models.” ArXiv:2106.09685 [Cs], October. https://arxiv.org/abs/2106.09685.
 ```
+@inproceedings{neethu2013sentiment,
+  title={Sentiment analysis in twitter using machine learning techniques},
+  author={Neethu, MS and Rajasree, R},
+  booktitle={2013 fourth international conference on computing, communications and networking technologies (ICCCNT)},
+  pages={1--5},
+  year={2013},
+  organization={IEEE}
+}
 @article{agarwal2016machine,
   title={Machine learning approach for sentiment analysis},
   author={Agarwal, Basant and Mittal, Namita and Agarwal, Basant and Mittal, Namita},
